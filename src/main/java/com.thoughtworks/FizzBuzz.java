@@ -2,21 +2,24 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String calculate(int number) {
+        String Fizz = "Fizz";
+        String Buzz = "Buzz";
+        String Whizz = "Whizz";
+
         String numberStr = String.valueOf(number);
         String result = "";
 
-        String Fizz = "Fizz";
         if (number % 3 == 0) {
             result += Fizz;
         }
         if (number % 5 == 0) {
-            result += "Buzz";
+            result += Buzz;
         }
         if (number % 7 == 0) {
-            result += "Whizz";
+            result += Whizz;
         }
         if (numberStr.contains("7")) {
-            return result.isEmpty() ? numberStr : result.replace("Buzz", "");
+            return result.isEmpty() ? numberStr : result.replace(Buzz, "");
         }
         if (numberStr.contains("5")) {
             return result.isEmpty() ? numberStr : result.replace("Fizz", "");
