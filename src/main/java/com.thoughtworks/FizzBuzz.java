@@ -2,9 +2,12 @@ package com.thoughtworks;
 
 public class FizzBuzz {
     public String calculate(int number) {
+        String numberStr = String.valueOf(number);
         String result = "";
+
+        String Fizz = "Fizz";
         if (number % 3 == 0) {
-            result += "Fizz";
+            result += Fizz;
         }
         if (number % 5 == 0) {
             result += "Buzz";
@@ -12,6 +15,16 @@ public class FizzBuzz {
         if (number % 7 == 0) {
             result += "Whizz";
         }
-        return result.isEmpty() ? String.valueOf(number) : result;
+        if (numberStr.contains("7")) {
+            return result.isEmpty() ? numberStr : result.replace("Buzz", "");
+        }
+        if (numberStr.contains("5")) {
+            return result.isEmpty() ? numberStr : result.replace("Fizz", "");
+        }
+
+        if (numberStr.contains("3")) {
+            return Fizz;
+        }
+        return result.isEmpty() ? numberStr : result;
     }
 }

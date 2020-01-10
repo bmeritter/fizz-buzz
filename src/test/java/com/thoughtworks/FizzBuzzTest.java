@@ -27,7 +27,26 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_FizzBuzz_when_15() {
-        assertEquals("FizzBuzz", new FizzBuzz().calculate(15));
+    public void should_return_Buzz_when_15() {
+        assertEquals("Buzz", new FizzBuzz().calculate(15));
+    }
+
+    @Test
+    public void should_return_Fizz_when_13() {
+        assertEquals("Fizz", new FizzBuzz().calculate(13));
+    }
+
+    @Test
+    public void should_return_17_when_17() {
+        assertEquals("17", new FizzBuzz().calculate(17));
+    }
+
+    @Test
+    public void should_return_BuzzWhizz_when_35() {
+        assertEquals("BuzzWhizz", new FizzBuzz().calculate(35));
+    }
+    @Test
+    public void should_return_Fizz_when_75() {
+        assertEquals("Fizz", new FizzBuzz().calculate(75));
     }
 }
