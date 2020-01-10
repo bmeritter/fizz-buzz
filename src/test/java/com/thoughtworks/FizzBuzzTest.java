@@ -8,6 +8,7 @@ public class FizzBuzzTest {
 
     @Test
     public void should_return_1_when_1() {
-        assertEquals(2, 1 + 1);
+        assertEquals("1", new FizzBuzz().calculate(1));
     }
+
 }
