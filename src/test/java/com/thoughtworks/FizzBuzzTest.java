@@ -25,4 +25,9 @@ public class FizzBuzzTest {
     public void should_return_Whizz_when_7() {
         assertEquals("Whizz", new FizzBuzz().calculate(7));
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_15() {
+        assertEquals("FizzBuzz", new FizzBuzz().calculate(15));
+    }
 }
